@@ -8,6 +8,10 @@ MCP server for an OA-first literature workflow:
 4. For non-OA papers, store abstract-only notes
 5. Upload to OpenWebUI and attach into a knowledge base for embedding + RAG
 
+## Maintainer Docs
+
+- See `AGENT_README.md` for deployment, operations, troubleshooting, and extension guidance.
+
 ## Features
 
 - `search_paper_candidates`
@@ -115,4 +119,3 @@ so you can detect permission-based fallback.
   }
 }
 ```
-
