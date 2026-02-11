@@ -1,0 +1,39 @@
+{
+  "name": "mcp-server-scholar-oa",
+  "version": "0.1.0",
+  "description": "MCP server for OA-first scholarly search, screening, and OpenWebUI knowledge ingestion",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-server-scholar-oa": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "npm run build && node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "openalex",
+    "openwebui",
+    "rag",
+    "oa",
+    "scholar"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
